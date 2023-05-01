@@ -327,6 +327,18 @@ template {
 /* =============
     Base
 ============= */
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
+}
+
+.resize-img {
+  width: 100%;
+}
+
 /* =============
     Typography
 ============= */
@@ -357,6 +369,64 @@ textarea {
 /* =============
     Header
 ============= */
+header #logo-nav {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". logo-nav .";
+}
+header #logo-nav > div {
+  grid-area: logo-nav;
+}
+header #search {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". search .";
+}
+header #search > div {
+  grid-area: search;
+}
 /* =============
     Footer
 ============= */
+footer {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". footer .";
+}
+footer > div {
+  grid-area: footer;
+}
+
+#hero aside {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". hero-aside .";
+  background: olive;
+}
+#hero aside > div {
+  grid-area: hero-aside;
+}
+
+#hero-sub .hero-sub-content {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". hero-subs .";
+}
+#hero-sub .hero-sub-content > div {
+  background: pink;
+  grid-area: hero-subs;
+  display: grid;
+  grid-template-columns: 50% auto;
+}
+
+#new ul li img {
+  width: 100%;
+}
+#new ul li section {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". new-content .";
+}
+#new ul li section > div {
+  grid-area: new-content;
+}
