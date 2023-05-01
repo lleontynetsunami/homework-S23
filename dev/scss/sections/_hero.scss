@@ -3,7 +3,7 @@
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". hero-aside .";
-        background: olive;
+        //background: olive;
         >div{
             grid-area: hero-aside;
         }
@@ -17,7 +17,7 @@
         grid-template-areas: ". hero-subs .";
         //background: olive;
         >div{
-            background: pink;
+            //background: pink;
             grid-area: hero-subs;
             display: grid;
             grid-template-columns: 50% auto ;

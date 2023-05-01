@@ -401,7 +401,6 @@ footer > div {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero-aside .";
-  background: olive;
 }
 #hero aside > div {
   grid-area: hero-aside;
@@ -413,7 +412,6 @@ footer > div {
   grid-template-areas: ". hero-subs .";
 }
 #hero-sub .hero-sub-content > div {
-  background: pink;
   grid-area: hero-subs;
   display: grid;
   grid-template-columns: 50% auto;
